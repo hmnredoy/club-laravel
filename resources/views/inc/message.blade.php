@@ -16,3 +16,12 @@
       {{$success_login}}
     </div>
 @endif
+
+@if(count($errors) > 0)
+    <div class="alert alert-danger" style="margin: 5px 5px;">
+        @foreach ($errors->all() as $error)
+            {{ $error }}<br>
+        @endforeach
+    </div>
+@endif
+

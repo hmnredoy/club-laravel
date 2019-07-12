@@ -80,7 +80,7 @@
                          <ul class="nav nav-second-level">
 
                             <li>
-                                <a href="panel-tabs.html"><i class="fa fa-plus-circle"></i>Add Club</a>
+                                <a href="{{route('create.club')}}"><i class="fa fa-plus-circle"></i>Add Club</a>
                             </li>
                             <li>
                                 <a href="notification.html"><i class="fa fa-cog"></i>Manage Existing Clubs</a>

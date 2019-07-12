@@ -43,5 +43,9 @@ Route::group(['middleware' => ['sess']], function () {
     Route::get('/member/{id}/edit', 'MemberController@edit');
     Route::put('/member/{id}/edit', 'MemberController@update');
     Route::get('/member/{id}/message', 'MemberController@message');
- 
+
+
+    Route::get('/club/new', 'ClubController@create')->name('create.club');
+    Route::post('/club/new', 'ClubController@store')->name('club.save');
+
 });
